@@ -43,7 +43,7 @@ public class AuthorizationServer extends AuthorizationServerConfigurerAdapter {
 
 	@Override
 	public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
-		clients.inMemory().withClient(clientid).secret(passwordEncoder.encode(clientSecret)).scopes("read", "write")
+		clients.inMemory().withClient(clientid).secret(passwordEncoder.encode(clientSecret)).scopes("read")
 				.authorizedGrantTypes("password", "refresh_token").accessTokenValiditySeconds(3600)
 				.refreshTokenValiditySeconds(18000);
 	}

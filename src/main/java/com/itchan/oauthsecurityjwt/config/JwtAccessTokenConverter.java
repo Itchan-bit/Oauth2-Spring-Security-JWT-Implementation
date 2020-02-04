@@ -15,7 +15,6 @@ public class JwtAccessTokenConverter extends DefaultAccessTokenConverter impleme
 	@Override
 	public void configure(org.springframework.security.oauth2.provider.token.store.JwtAccessTokenConverter converter) {
 		converter.setAccessTokenConverter(this);
-		
 	}
 
 	@Override

@@ -8,13 +8,13 @@ spring:
     url: "jdbc:mysql://localhost:3306/USERSERVICE?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC"
     password: 
     username: "root"
-
     
     
 config:
     oauth2:
-        clientid: talk2amareswaran
-        clientSecret: talk2amareswaran@123
+        clientid: itchan
+        clientSecret: itchan123
+        clientAuthenticationScheme: form
         privateKey: -----BEGIN RSA PRIVATE KEY-----
           MIIEowIBAAKCAQEAr9xXyl1Kczo6iD15NbcEZUskqwJp2RhTJ9Fmk1CHVqS/sPhd
           hIjzBnh9wqx4rqKUgZePIPikOm7p3OsQAgWbX1NV1xll2mHtKEKvPZy4xinkIodD
@@ -51,6 +51,8 @@ config:
             fn4vNAd7W4CrdjudhcwIjdxQFocehQBrrCftpo6JPAoE/3zymGSzpc9Xvwcd3qyW
             7QIDAQAB
             -----END PUBLIC KEY-----
+        
+
 
 security:
   oauth2:
@@ -65,9 +67,10 @@ security:
           fn4vNAd7W4CrdjudhcwIjdxQFocehQBrrCftpo6JPAoE/3zymGSzpc9Xvwcd3qyW
           7QIDAQAB
           -----END PUBLIC KEY-----
+  
         
-       
-      
+
+
       
 
 
